@@ -8,6 +8,13 @@
 <body>
     <!-- Imagen con mapa. Inserta una imagen con áreas activas definidas por un mapa. -->
      <h1>Imagen con Mapa</h1>
-     <img src="imagenes/mapa.jpg" alt="mapa franciautos" width="800"  usemap="#mapa">
+     <img src="imagenes/mapa.jpg" alt="mapa franciautos" usemap="#mapa" width="800">
+
+     <map name="mapa">
+        <!-- area de un rectangulo -->
+         <area shape="rect" coords="295,237,330,264" href="https://www.franciautos.com" alt="Francia Autos Repuestos" target="_blank">
+         <area shape="circle" coords="748,104,20" href="https://www.homecenter.com.co/homecenter-co/" alt="ferreteria" target="_blank">
+         <area shape="poly" coords="671,296,706,299,689,342" href="https://www.panamericana.com.co/" alt="papeleria" target="_blank">
+     </map>
 </body>
 </html>
