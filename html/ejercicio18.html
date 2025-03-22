@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 18</title>
+</head>
+<body>
+    <!-- Formulario con validación. Crea un formulario con campos 
+     que requieran validación y muestra mensajes de error. -->
+     <h1>Formulario con validacion</h1>
+     <form action="" method="POST">
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario" pattern="[a-zA-Z0-9]{8,30}" maxlength="30" minlength="8" required>
+        <br>
+        <button type="submit">Enviar</button>
+     </form>
+    
+</body>
+</html>
