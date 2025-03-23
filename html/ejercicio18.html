@@ -8,11 +8,15 @@
 <body>
     <!-- Formulario con validación. Crea un formulario con campos 
      que requieran validación y muestra mensajes de error. -->
-     <h1>Formulario con validacion</h1>
-     <form action="" method="POST">
-        <label for="usuario">Usuario</label>
-        <input type="text" id="usuario" name="usuario" pattern="[a-zA-Z0-9]{8,30}" maxlength="30" minlength="8" required>
-        <br>
+     <h1>Formulario con validacion</h1><br>
+     <form action="#" method="POST">
+        <label for="usuario">Usuario</label><br>
+        <input type="text" id="usuario" name="usuario" pattern="[a-zA-Z0-9]{8,30}" maxlength="30" minlength="8" 
+        required title="numeros y letras minimo 8 caracteres maximo 30">
+        <br><br>
+        <label for="mail">Digite su correo</label><br>
+        <input type="email" name="mail" id="mail" required pattern="[a-zA-Z0-9\-_%*]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,3}" 
+        title="admite numero y letras y caracteres _%*- debe llevar separador @ y punto antes del dominio"><br><br>
         <button type="submit">Enviar</button>
      </form>
     
