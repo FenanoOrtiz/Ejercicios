@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 19</title>
+</head>
+<body>
+    <!-- Audio con controles personalizados. 
+     Inserta un archivo de audio con controles personalizados. -->
+    <h1>Archivo de audio con controles personalizados</h1>
+    <audio id="miAudio" loop>
+        <source src="audio/metallica.mp3" type="audio/mpeg">
+        tu navegador no soporta audio.
+    </audio>
+    <!-- <button onclick="document.getElementById('miAudio').play()">Play</button>
+    <button onclick="document.getElementById('miAudio').pause()">Pause</button> -->
+    <div>
+        <button onclick="play()">Play</button>
+        <button onclick="pausar()">Pausar</button>
+        <input type="range" id="volumen" min="0" max="1" step="0.1" onchange="cambiarVolumen(this.value)">
+    </div>
+    <script>
+        const audio = document.getElementById('miAudio');
+        function play(){
+            audio.play();
+        }
+        function pausar(){
+            audio.pause();
+        }
+        function cambiarVolumen(valor){
+            audio.volume = valor;
+        }
+    </script>
+</body>
+</html>
