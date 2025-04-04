@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 16</title>
+    <style>
+        /* Elemento al que aplicaremos la animación */
+h3{
+  width: 100px;
+  height: 100px;
+  background-color: #FF5733;
+  border-radius: 50%;
+  animation: girar 2s infinite linear; /* Configuración de la animación */
+}
+
+/* Definimos la animación */
+@keyframes girar {
+  from {
+    transform: rotate(0deg); /* Comienza sin rotación */
+  }
+  to {
+    transform: rotate(360deg); /* Rota completamente (360 grados) */
+  }
+}
+    </style>
+</head>
+<body>
+    <!-- Crear un efecto de animación giratoria en un elemento. -->
+     <h3>Aviso girando</h3>
+</body>
+</html>
