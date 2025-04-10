@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-image: url(/css/images/pharmacy\(1\).jpg);
+    background-size:auto;
+}
+nav{
+    width: 70%;
+    margin: auto;
+    background-color: #e7bcbc;
+    margin-top: 40px;
+    font-size:20px;
+      
+}
+.menu-horizontal{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+.menu-horizontal > li > a{/*selector que me perimite selecciona solo los enlaces ( a )
+    que estan en el (li) que es hijo directo de menu horizontal sin afectar a los demas
+    enlaces de los otros submenu*/
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+}
+.menu-horizontal >li:hover {
+    background-color: rgb(206, 79, 79);
+}
+.menu-vertical{
+    position: absolute;
+    display: none;
+    background-color:#e7bcbc ;
+    list-style: none;
+    width: 8%;
+   
+}
+.menu-horizontal >li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li a{
+    display: block;/*lo que hace que ocupe el ancho de contenedor*/
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+}
+.menu-vertical li:hover{
+    background-color: rgb(206, 79, 79);
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 17</title>
+    <style>
+        #contenedor-elementos{
+            
+            /* position: relative; */
+            display: flex; /*la respuesta del ejercicio es asi */
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 100%;
+            height:auto;
+        }
+        .elemento{
+            /*float: inline-start; /*yo lo hice con position y float, pero es mejor con flex*/
+            width: 300px;
+            height: 300px;
+            color: white;
+            text-align: center;
+            margin:40px;
+            padding:10px;
+            font-size: 30px;
+            box-shadow: -5px 0px 31px 1px #21B9C6;
+        }
+        #rpt1{
+            background-image: url('/css/images/08HB158.jpg');
+            background-size: cover;
+        } 
+        #rpt2{
+            background-image: url('/css/images/11B387A12B.jpg');
+            background-size: cover;
+        }
+        #rpt3{
+            background-image: url('/css/images/11C640012B.jpg');
+            background-size: cover;
+        }
+        #rpt4{
+            background-image: url('/css/images/11C889012B.jpg');
+            background-size: cover;
+        }
+        #rpt5{
+            background-image: url('/css/images/11C890012B.jpg');
+            background-size: cover;
+        }
+        #rpt6{
+            background-image: url('/css/images/2JH0505.jpg');
+            background-size: cover;
+        }               
+        
+    </style>
+</head>
+<body>
+    <!-- Crear un diseño de mosaico con elementos flotantes. -->
+     <div id="contenedor-elementos">
+        <div id="rpt1" class="elemento">
+            <h3 class="title">Nombre Repuesto</h3>
+        </div>
+        <div  id="rpt2" class="elemento">
+            <h3 class="title">Nombre Repuesto</h3>
+        </div>
+        <div id="rpt3" class="elemento">
+            <h3 class="title">Nombre Repuesto</h3>
+        </div>
+        <div id="rpt4" class="elemento">
+            <h3 class="title">Nombre Repuesto</h3>
+        </div>
+        <div id="rpt5" class="elemento">
+           <h3 class="title">Nombre Repuesto</h3>
+        </div>
+        <div id="rpt6" class="elemento">
+            <h3 class="title">Nombre Repuesto</h3>
+        </div>
+
+     </div>
+    
+</body>
+</html>
