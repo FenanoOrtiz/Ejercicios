@@ -1,0 +1,13 @@
+.contenedor{
+  background-image: url('../images/pharmacy\(1\).jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;/*estaba utilizando el 100% y no se ve la imagen*/
+}
+
+.caja{
+  height: 500px;
+  background-color: #fff;
+  padding: 1rem;
+  text-align: center;
+}

@@ -1,26 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 19</title>
     <style>
-        button {
-          background-color: #3498db;
-          color: white;
-          border: none;
-          padding: 10px 20px;
-          cursor: pointer;
-        }
-        button:hover {
-          background-color: #2ecc71; /* Cambia el color al pasar el mouse */
-        }
-      </style>
+      input:hover{
+        background-color: aqua;
+        
+      }
+      a:visited{
+        color: red;
+      }
+      label:nth-of-type(4){
+        color: blueviolet;
+      }
+      input:nth-of-type(1):hover{
+        background-color: brown;
+      }
+      input:nth-of-type(2):hover{
+        background-color: rgb(50, 42, 165);
+        color: white;
+      }
+      input:nth-of-type(5):hover{
+        background-color: rgb(95, 95, 99);
+        color: white;
+      }
+    span[data-descr] {
+    position: relative;
+    text-decoration: underline;
+    color: #00f;
+    cursor: help;
+  }
+  
+  span[data-descr]:hover::after,
+  span[data-descr]:focus::after {
+    content: attr(data-descr);
+    position: absolute;/*me permie que el aviso se ubique en relacion al span que tiene posicion relativa*/
+    left: 0; /*que comience el aviso justamente donde empieza la palabra*/
+    top: 24px; /*me da la distancia entre la palabra y el aviso*/
+    min-width: 200px;
+    border: 1px #aaaaaa dotted;
+    border-radius: 10px;
+    background-color: #cccc5b;
+    padding: 12px;
+    color: #000000;
+    font-size: 14px;
+    z-index: 1;/*que el aviso salga encima de todo lo demas*/
+  }
+      
+    </style>
+        
 </head>
 <body>
     <!-- Estilizar un elemento utilizando pseudo-clases. -->
-     
-          <button>¡Pasa el mouse por aquí!</button>
-    
+    <h3>Utilizando <span tabindex="0" data-descr="los pseudo-elementos se añaden a los selectores, 
+      pero en cambio, no describen un estado especial sino que, permiten añadir estilos a una parte 
+      concreta del documento">pseudo elementos</span> y <span tabindex="0"
+      data-descr="palabra clave que se añade a los selectores y que especifica un 
+      estado especial del elemento seleccionado">pseudo clases</span> </h3> 
+    <p>En este parrafo quiero que se explique esta palabra 
+     <span tabindex="0" data-descr="palabra enredada de traba lenguas">parangaricutirimicuaro</span> y 
+     si hay mas palabras con descripción deben salir automaticamente por ejemplo <span tabindex="0" 
+     data-descr="pajaro que es el mismo tortolo jajajaj">tortolo</span>
+    </p>
+     <form action="#">
+          <label for="name">Nombre</label><br>
+          <input type="text" name="name" id="name"><br>
+          <label for="dir">Direccion</label><br>
+          <input type="text" name="dir" id="dir"><br>
+          <label for="tel">Telefono</label><br>
+          <input type="text" name="tel" id="tel"><br>
+          <label for="cont">Contacto</label><br>
+          <input type="text" name="cont" id="cont"><br>
+          <label for="citi">Ciudad</label><br>
+          <input type="text" name="citi" id="citi"><br>
+          <label for="pais">Pais</label><br>
+          <input type="text" name="pais" id="pais"><br>
+        
+       <a href="#">enlace</a>
+     </form>
+          
 </body>
 </html>
