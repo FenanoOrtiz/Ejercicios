@@ -1,0 +1,12 @@
+.contenedor{
+    position: relative;
+    font-size: larger;
+}
+.contenedor p{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}    
