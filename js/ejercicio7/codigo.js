@@ -13,4 +13,3 @@ function multiplica(){
     document.getElementById('suma').innerHTML=`la multiplicacion de ${num1} * ${num2} = ${resultado}`;
 }
 
-
